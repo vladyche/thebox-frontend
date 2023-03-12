@@ -1,0 +1,159 @@
+.mobile-menu {
+    display: none;
+
+    opacity: 0;
+    transition: opacity linear .2s;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000000ee;
+
+    z-index: 2000;
+
+    >.container {
+        width: auto;
+        height: 100vh;
+
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+.mobile-menu-panel {
+    width: 250px;
+
+    position: absolute;
+    top: 0;
+    right: -250px;
+    bottom: 0;
+    left: auto;
+
+    transform: translateX(0px);
+    transition: transform .2s linear;
+
+    >.close {
+        width: 250px;
+        position: fixed;
+
+        background-color: #2947A9;
+    }
+
+    >.menu {
+        height: 100vh;
+        overflow-y: auto;
+        background-color: #ffffff;
+    }
+}
+
+.mobile-menu-panel--close {
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .btn {
+        width: 80px;
+        height: 30px;
+
+        background: none;
+        border: 1px solid #ffffff;
+
+        font-family: "worksans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.mobile-menu-panel--block {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.mobile-menu-list {
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;
+
+    .item {
+        border-bottom: 1px solid #b3b3b3;
+
+        .link {
+            text-decoration: none;
+        }
+    }
+}
+
+.mobile-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 5px 0;
+
+    .i {
+        flex-basis: 4px;
+        height: 15px;
+    }
+
+    .t {
+        font-family: "worksans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #14171F;
+
+        flex-grow: 1;
+    }
+}
+
+.active {
+
+    .mobile-menu-item {
+
+        .i {
+            background-color: #F9995D;
+        }
+
+        .t {
+            color: #F9995D;
+        }
+    }
+}
+
+.d {
+
+    display: block;
+}
+
+.a {
+
+    opacity: 1;
+}
+
+.open {
+
+    .mobile-menu-panel {
+        transform: translateX(-250px);
+
+        >.close {}
+
+        >.menu {}
+    }
+}

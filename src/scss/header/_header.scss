@@ -1,0 +1,47 @@
+.header-columns {
+    height: 80px;
+
+    padding: 0 50px;
+
+    @include media-breakpoint-only(xs) {
+        padding: 0 25px;
+    }
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: #FFFFFF;
+
+    >.logo {
+        flex-basis: 163px;
+        position: relative;
+    }
+
+    >.menu {
+        flex-grow: 1;
+        position: relative;
+    }
+}
+
+.website-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .link {
+        text-decoration: none;
+
+        .img {
+            display: block;
+            width: 150px;
+            height: auto;
+        }
+    }
+}

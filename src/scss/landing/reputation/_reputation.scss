@@ -1,0 +1,74 @@
+.reputation {
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.reputation-block {
+
+    >.title {
+        margin: 0;
+        padding: 50px 0 30px;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #292E3D;
+    }
+}
+
+.reputation-previews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reputation-preview {
+    flex-basis: 292px;
+
+    @include media-breakpoint-down(xl) {
+        flex-basis: 90%;
+    }
+
+    margin: 5px 20px;
+
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+
+    >.container {
+        min-height: 150px;
+        padding: 15px;
+
+        >.i {
+            display: block;
+        }
+
+        >.title {
+            margin: 0;
+            padding: 18px 0 18px;
+
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            color: #3D445C;
+        }
+
+        >.text {
+
+            p {
+                margin: 0;
+                padding: 0;
+
+                font-family: 'worksans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #858EAD;
+            }
+        }
+    }
+}

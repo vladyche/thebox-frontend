@@ -1,0 +1,31 @@
+.mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    @include media-breakpoint-down(lg) {
+        display: flex;
+    }
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    .btn {
+        width: 50px;
+        height: 25px;
+
+        background: none;
+
+        border-radius: 4px;
+        border: 1px solid #F9995D;
+
+        color: #F9995D;
+
+        cursor: pointer;
+    }
+}

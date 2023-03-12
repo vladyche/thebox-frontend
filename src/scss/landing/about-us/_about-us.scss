@@ -1,0 +1,138 @@
+.about-us {
+    background: #ffffff;
+}
+
+.about-us-container {
+    min-height: 600px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include media-breakpoint-only(md) {
+        min-height: 670px;
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+
+    @include media-breakpoint-only(sm) {
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: block;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .card {
+        z-index: 1000;
+    }
+}
+
+.about-us-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include media-breakpoint-only(md) {
+        justify-content: flex-start;
+    }
+
+    @include media-breakpoint-only(sm) {
+        justify-content: flex-start;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+
+    .img {
+        width: 700px;
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+.about-us-card {
+    width: 400px;
+    // min-height: 500px;
+
+    background-color: #2947A9;
+
+    box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+    border-radius: 2px;
+
+    @include media-breakpoint-only(xs) {
+        width: auto;
+    }
+
+    >.container {
+        padding: 40px 20px 40px;
+        // min-height: 500px;
+    }
+}
+
+.about-us-article {
+
+    h3 {
+        margin: 0;
+        padding: 0;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+
+        color: #FFFFFF;
+    }
+
+    p {
+        margin: 20px 0 20px 0;
+        padding: 0;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+
+        color: #FFFFFF;
+    }
+}
+
+.about-us-link {
+    text-decoration: none;
+    display: block;
+    margin-top: 50px;
+
+    .btn {
+        width: 200px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 2px solid #2947A9;
+        border-radius: 6px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .t {
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #373737;
+    overflow-y: scroll;
+}
+
+.website {
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 100vh;
+
+    background-color: #e5e5e5;
+
+    margin: 0 auto;
+
+    >.container {
+        margin: 0 auto;
+        min-height: 100vh;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: 540px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+        }
+    }
+}
+
+.base {
+    min-height: 100vh;
+    display: grid;
+
+    // (header:fixed) 
+    // 1fr div:container 
+    // auto div:footer 
+    // auto div:copyright
+    grid-template-rows: 1fr auto auto;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 2000;
+}
+
+.header {
+    max-width: 1920px;
+    min-width: 320px;
+
+    margin: 0 auto;
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: 540px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+        }
+    }
+}
+
+.content {
+    padding-top: 80px;
+    background-color: #ffffff;
+}
+
+.footer {
+
+    >.row-1 {
+        background-color: #FFFFFF;
+    }
+}
+
+.copyright {
+    background-color: #2947A9;
+}
+
+.block {
+
+    >.container {
+        padding: 0 50px;
+
+        @include media-breakpoint-only(xs) {
+            padding: 0 25px;
+        }
+
+        >.row {}
+    }
+}
+
+.page {
+    padding: 0 50px;
+
+    @include media-breakpoint-only(xs) {
+        padding: 0 25px;
+    }
+
+    >.title {}
+
+    >.main-content {}
+}
+
+.single-page,
+.category-page {
+
+    >.title {
+
+        >h1 {
+            margin: 0;
+            padding: 50px 0 30px;
+
+            font-family: "worksans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+
+            color: #292E3D;
+        }
+    }
+}
+
+.article {
+    margin: 0;
+    padding: 0;
+    font-family: "worksans";
+    font-style: normal;
+    font-weight: 700;
+    color: #292E3D;
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

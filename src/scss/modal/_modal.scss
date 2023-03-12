@@ -1,0 +1,277 @@
+// "modal-on" classList to body tag
+.modal-on {
+    overflow: hidden;
+
+    .modal {
+        display: flex;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000000bb;
+
+    z-index: 2000;
+
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    >.container {
+        flex-basis: 320px;
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: 275px;
+        }
+    }
+}
+
+.callback {
+    position: relative;
+
+    >.close {
+        background-color: #ffffff;
+    }
+
+    >.container {
+        background-color: #ffffff;
+        padding: 15px;
+
+        >.row-1 {}
+
+        >.row-2 {
+            padding-top: 10px;
+        }
+    }
+
+    >.preloader {
+        display: none;
+
+        // display: none;
+
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+
+        // background-color: #000000e0;
+    }
+}
+
+.callback-close {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .block {
+        background-color: #ffffff;
+        padding: 3px 3px 0;
+    }
+}
+
+.callback-close--btn {
+    font-family: 'worksans';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #ffffff;
+
+    background-color: #2947A9;
+    border: none;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.callback-titles {
+    font-family: 'worksans';
+    font-style: normal;
+
+    color: #14171F;
+
+    >.title {
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    >.description {
+
+        p {
+            margin: 0;
+            padding: 0;
+
+            text-align: center;
+
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.callback-form-fields {
+
+    >.field {
+        margin: 5px 0 5px 0;
+
+        &:first-child {
+            margin: 0 0 5px 0;
+        }
+
+        &:last-child {
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+.callback-form-field {
+
+    >.row-1 {}
+
+    >.row-2 {}
+
+    >.row-3 {}
+}
+
+.callback-form-field--label {
+    display: flex;
+    flex-direction: row;
+
+    .col-1 {
+
+        .label {
+            margin: 0;
+            padding: 0;
+
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            color: #292E3D;
+        }
+    }
+
+    .col-2 {
+        flex-grow: 1;
+        position: relative;
+    }
+}
+
+.callback-form-field--error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    .t {
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #bb0000;
+    }
+}
+
+.callback-form-field--error-message {
+    height: 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .t {
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #bb0000;
+    }
+}
+
+.callback-form-field--input {
+    display: block;
+    width: 100%;
+
+    margin: 0;
+    padding: 5px;
+
+    box-sizing: border-box;
+    border: 1px solid #292E3D;
+    outline: none;
+
+    background-color: #ffffff;
+
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+
+    &[type="text"] {
+        color: #3a3a3a;
+    }
+}
+
+.callback-form-field--textarea {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #292E3D;
+    outline: none;
+
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+
+    resize: none;
+
+    color: #3a3a3a;
+}
+
+.callback-form--submit {
+    padding-top: 10px;
+
+    .btn {
+        display: block;
+        margin: 0 auto;
+
+        width: 100%;
+        height: 30px;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFFFFF;
+
+        text-transform: uppercase;
+
+        background: #2947A9;
+        border: none;
+        border-radius: 2px;
+
+        cursor: pointer;
+    }
+}
