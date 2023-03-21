@@ -13,7 +13,15 @@
         @include media-breakpoint-down(lg) {}
 
         >.container {
-            width: 300px;
+            width: 330px;
+
+            @include media-breakpoint-only(xxl) {
+                width: 350px;
+            }
+
+            @include media-breakpoint-only(lg) {
+                width: 270px;
+            }
 
             @include media-breakpoint-down(lg) {
                 width: auto;
@@ -237,7 +245,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+
+    @include media-breakpoint-down(lg) {
+        justify-content: center;
+    }
 
     gap: 20px;
 
@@ -249,12 +260,20 @@
 .project-card {
     width: 300px;
 
+    @include media-breakpoint-only(xxl) {
+        width: 380px;
+    }
+
     @include media-breakpoint-only(lg) {
         width: 270px;
     }
 
+    @include media-breakpoint-only(sm) {
+        width: auto;
+    }
+
     @include media-breakpoint-only(xs) {
-        width: 250px;
+        width: auto;
     }
 
     >.img {
@@ -286,15 +305,18 @@
     width: 620px;
     height: 40px;
 
+    @include media-breakpoint-only(xxl) {
+        width: 780px;
+    }
+
     @include media-breakpoint-only(lg) {
-        width: auto;
+        width: 560px
     }
 
     @include media-breakpoint-down(lg) {
         width: auto;
     }
 
-    margin: 0 auto;
     background-color: #292E3D;
 
     cursor: pointer;

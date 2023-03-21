@@ -15,7 +15,7 @@ export const js = () => {
         ))
 
         .pipe(webpack({
-            mode: 'development', //production|development
+            mode: 'production', //production|development
 
             // devtool: 'source-map',
 
