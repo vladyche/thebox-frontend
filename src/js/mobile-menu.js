@@ -1,10 +1,15 @@
-const mobileMenu = document.querySelector('.mobile-menu');
-const mobileMenuPanel = document.querySelector('.mobile-menu-panel');
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const mobileMenuPanelCloseBtn = document.querySelector('.mobile-menu-panel--close > .btn');
+import { el, els, ev } from "./functions.js";
 
-mobileMenuBtn.addEventListener('click', mobileMenuOpen);
-mobileMenuPanelCloseBtn.addEventListener('click', mobileMenuClose);
+const mobileMenu = el('.mobile-menu');
+const mobileMenuPanel = el('.mobile-menu-panel');
+const mobileMenuBtn = el('.mobile-menu-btn');
+const mobileMenuPanelCloseBtn = el('.mobile-menu-panel--close > .btn');
+
+// mobileMenuBtn.addEventListener('click', mobileMenuOpen);
+// mobileMenuPanelCloseBtn.addEventListener('click', mobileMenuClose);
+
+ev(mobileMenuBtn, 'click', mobileMenuOpen);
+ev(mobileMenuPanelCloseBtn, 'click', mobileMenuClose);
 
 const display = "d"; // css display: block;
 const opacity = "a"; // css opacity: 1;
