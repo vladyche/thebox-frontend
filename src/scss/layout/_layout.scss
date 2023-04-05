@@ -65,21 +65,17 @@ body {
 .footer {
 
     >.container {
-        background-color: #FFFFFF;
-
         display: flex;
         flex-direction: row;
 
+        background-color: #FFFFFF;
+
         min-height: 325px;
-
         padding: 0 50px;
-
-        @include media-breakpoint-only(xs) {
-            padding: 0 25px;
-        }
 
         @include media-breakpoint-down(lg) {
             flex-direction: column;
+            padding: 0 25px;
         }
 
         >.col-1 {
@@ -95,6 +91,7 @@ body {
 
             @include media-breakpoint-down(lg) {
                 flex-basis: 100%;
+                padding-bottom: 25px;
             }
         }
     }

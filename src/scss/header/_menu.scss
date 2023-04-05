@@ -1,4 +1,8 @@
-.main-nav {}
+.main-nav {
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
 
 .main-menu {
     margin: 0;
@@ -43,14 +47,13 @@
         }
 
         .link {
-            text-decoration: none;
-
             font-family: 'worksans';
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
-            line-height: 21px;
+
             color: #14171F;
+            text-decoration: none;
 
             &:hover {
                 color: #F9995D;
@@ -72,5 +75,30 @@
             font-weight: 600;
             color: #F9995D;
         }
+    }
+}
+
+.mobile-menu-btn {
+    display: none;
+
+    width: 50px;
+    height: 30px;
+
+    border: 1px solid #F9995D;
+    border-radius: 3px;
+
+    font-family: 'worksans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+    color: #F9995D;
+    text-transform: uppercase;
+    background: none;
+
+    cursor: pointer;
+
+    @include media-breakpoint-down(lg) {
+        display: block;
     }
 }
