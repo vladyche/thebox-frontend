@@ -26,7 +26,7 @@ body {
         display: grid;
 
         // (header:fixed) 
-        // 1fr div:container 
+        // 1fr div:main-content 
         // auto div:footer 
         // auto div:copyright
         grid-template-rows: 1fr auto auto;
@@ -57,7 +57,7 @@ body {
     }
 }
 
-.content {
+.main {
     padding-top: 80px;
     background-color: #ffffff;
 }
