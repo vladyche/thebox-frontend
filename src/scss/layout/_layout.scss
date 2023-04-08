@@ -48,7 +48,7 @@ body {
         }
 
         @include media-breakpoint-only(sm) {
-            width: 540px;
+            width: auto;
         }
 
         @include media-breakpoint-only(xs) {

@@ -4,7 +4,8 @@
     right: 0;
     bottom: auto;
     left: 0;
-    z-index: 2000;
+
+    z-index: 1;
 
     >.container {
         max-width: 1920px;
@@ -33,7 +34,7 @@
     }
 
     @include media-breakpoint-only(sm) {
-        width: 540px;
+        width: auto;
     }
 
     @include media-breakpoint-only(xs) {
@@ -45,6 +46,8 @@
 
         height: 80px;
         padding: 0 50px;
+
+        background-color: #ffffff;
 
         @include media-breakpoint-down(lg) {
             padding: 0 25px;

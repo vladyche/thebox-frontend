@@ -6,9 +6,9 @@
 </head>
 
 
-<!-- body tag classList: "modal-on" for switch on modal -->
+<!-- body tag classList: "scrolloff" for off scroll -->
 
-<body>
+<body class="body">
     <div class="website">
         <div class="container">
 
@@ -18,12 +18,146 @@
 
             <div class="content">
 
+                <!-- main slider -->
+                <div class="main-slider">
+                    <div class="slide-title">
+                        <div class="title">
+                            <span class="t">Building things <br> is our mission</span>
+                        </div>
+                    </div>
+
+                    <div class="slides">
+                        <img src="../img/slider/img-1.png" alt="" class="slide">
+                    </div>
+
+                    <div class="navigation-desktop">
+                        <div class="titles">
+                            <div class="main-slider--titles">
+                                <div class="category">
+                                    <span class="t">Future Projects</span>
+                                </div>
+
+                                <div class="title">
+                                    <span class="t">The National University of Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="main-slider--navigation">
+                                <div class="l">
+                                    <div class="main-slider--nav-l">
+                                        <div class="i">
+                                            <img src="../img/slider/i/prev.png" alt="prev" class="icon">
+                                        </div>
+
+                                        <div class="t">
+                                            <span class="title">Back</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="center"></div>
+
+                                <div class="r">
+                                    <div class="main-slider--nav-r">
+                                        <div class="t">
+                                            <span class="title">Next</span>
+                                        </div>
+
+                                        <div class="i">
+                                            <img src="../img/slider/i/next.png" alt="next" class="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation-mobile">
+                        <div class="main-slider-mobile--navigation">
+                            <div class="l">
+                                <div class="main-slider--nav-l">
+                                    <div class="i">
+                                        <img src="../img/slider/i/prev.png" alt="prev" class="icon">
+                                    </div>
+
+                                    <div class="t">
+                                        <span class="title">Back</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="center"></div>
+
+                            <div class="r">
+                                <div class="main-slider--nav-r">
+                                    <div class="t">
+                                        <span class="title">Next</span>
+                                    </div>
+
+                                    <div class="i">
+                                        <img src="../img/slider/i/next.png" alt="next" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end main-slider -->
+
+
+
+
+
+
+
+
             </div>
 
             <!-- footer -->
             @@include('blocks/footer/footer.html')
             <!-- end footer -->
 
+        </div>
+    </div>
+
+    <!-- classList: d a | open mobile menu-->
+    <!-- d: display: block; -->
+    <!-- a: opacity: 1 -->
+    <div class="main-menu-mobile">
+        <div class="container">
+
+            <!-- classList: open -->
+            <div class="mobile-nav-panel">
+                <div class="top">
+                    <button class="close">Close</button>
+                </div>
+
+                <nav class="nav">
+                    <ul class="mobile-main-nav">
+                        <li class="item">
+                            <a href="/" class="link">Home</a>
+                        </li>
+
+                        <li class="item">
+                            <a href="./about.html" class="link">About Us</a>
+                        </li>
+
+                        <li class="item">
+                            <a href="./projects.html" class="link">Projects</a>
+                        </li>
+
+                        <li class="item">
+                            <a href="./services.html" class="link">Services</a>
+                        </li>
+
+                        <li class="item active">
+                            <a href="./contacts.html" class="link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 
