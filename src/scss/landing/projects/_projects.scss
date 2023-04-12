@@ -1,0 +1,659 @@
+.projects {
+
+    >.container {
+        padding: 0 50px;
+        min-height: 1098px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {
+            min-height: auto;
+        }
+
+        @include media-breakpoint-only(md) {
+            min-height: auto;
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            min-height: auto;
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            min-height: auto;
+            padding: 0 25px;
+        }
+
+        >h2 {
+            margin: 0;
+            padding: 40px 0 80px;
+
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+
+            color: #292E3D;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                padding: 40px 0 40px;
+            }
+
+            @include media-breakpoint-only(sm) {
+                padding: 40px 0 40px;
+            }
+
+            @include media-breakpoint-only(xs) {
+                padding: 40px 0 40px;
+            }
+        }
+
+        >.row-1 {
+            display: flex;
+            flex-direction: row;
+
+            padding-bottom: 138px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                flex-direction: column;
+            }
+
+            @include media-breakpoint-only(sm) {
+                flex-direction: column;
+            }
+
+            @include media-breakpoint-only(xs) {
+                flex-direction: column;
+            }
+
+            >.col-1 {
+                @include media-breakpoint-only(xxl) {}
+
+                @include media-breakpoint-only(xl) {}
+
+                @include media-breakpoint-only(lg) {}
+
+                @include media-breakpoint-only(md) {
+                    padding-bottom: 15px;
+                }
+
+                @include media-breakpoint-only(sm) {
+                    padding-bottom: 15px;
+                }
+
+                @include media-breakpoint-only(xs) {
+                    padding-bottom: 15px;
+                }
+            }
+
+            >.col-2 {
+                flex-grow: 1;
+
+                @include media-breakpoint-only(xxl) {}
+
+                @include media-breakpoint-only(xl) {}
+
+                @include media-breakpoint-only(lg) {}
+
+                @include media-breakpoint-only(md) {
+                    flex-grow: 0;
+                }
+
+                @include media-breakpoint-only(sm) {
+                    flex-grow: 0;
+                }
+
+                @include media-breakpoint-only(xs) {
+                    flex-grow: 0;
+                }
+            }
+        }
+    }
+}
+
+.projects-category-nav {
+    width: 400px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {
+        width: 300px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        width: 250px;
+    }
+
+    @include media-breakpoint-only(md) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+}
+
+.projects-category-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    >.item {
+        padding: 10px 0 10px 0;
+        cursor: pointer;
+
+        &:first-child {
+            padding: 0 0 10px 0;
+        }
+
+        &:last-child {
+            padding: 10px 0 0 0;
+        }
+
+        &:hover {
+
+            .projects-menu-item {
+
+                .i {}
+
+                .t {
+                    color: #2947A9;
+                }
+            }
+        }
+    }
+}
+
+.projects-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >.i {
+        width: 4px;
+        height: 28px;
+    }
+
+    >.t {
+        padding-left: 16px;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+
+        color: #C2C7D6;
+    }
+}
+
+.active {
+
+    .projects-menu-item {
+
+        .i {
+            background-color: #2947A9;
+        }
+
+        .t {
+            font-weight: 700;
+            color: #2947A9;
+        }
+    }
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: minmax(200px, 384px) minmax(200px, 384px);
+    justify-content: space-between;
+    gap: 32px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {
+        gap: 25px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        gap: 15px;
+    }
+
+    @include media-breakpoint-only(md) {
+        gap: 15px;
+    }
+
+    @include media-breakpoint-only(sm) {
+        gap: 15px;
+    }
+
+    @include media-breakpoint-only(xs) {
+        grid-template-columns: minmax(200px, 384px);
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    .icon {
+        display: block;
+        max-width: 100%;
+    }
+
+    .container {
+        flex-grow: 1;
+
+        padding: 12px;
+
+        font-family: 'worksans';
+        font-style: normal;
+        color: #FFFFFF;
+
+        background-color: #2947A9;
+
+        h4 {
+            margin: 0 0 12px 0;
+            padding: 0;
+
+            font-weight: 700;
+            font-size: 20px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {
+                font-size: 18px;
+            }
+
+            @include media-breakpoint-only(lg) {
+                font-size: 16px;
+            }
+
+            @include media-breakpoint-only(md) {
+                font-size: 16px;
+            }
+
+            @include media-breakpoint-only(sm) {
+                font-size: 16px;
+            }
+
+            @include media-breakpoint-only(xs) {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+
+            font-weight: 400;
+            font-size: 18px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {
+                font-size: 16px;
+            }
+
+            @include media-breakpoint-only(lg) {
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-only(md) {
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-only(sm) {
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-only(xs) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.projects-cards--navs {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 32px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+
+    .l {}
+
+    .center {
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .r {}
+}
+
+.projects-cards--navs-btn {
+    width: 295px;
+    height: 64px;
+    background-color: #292E3D;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {
+        width: 250px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        width: 200px;
+    }
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {}
+
+    .container {
+
+        .i {}
+
+        .t {
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.projects-cards--nav-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .i {}
+
+    .t {}
+
+    .back {
+        padding-left: 10px;
+    }
+
+    .next {
+        padding-right: 10px;
+    }
+}
+
+.projects-cards--navs-dots {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    .item {
+        width: 16px;
+        height: 16px;
+
+        border-radius: 50%;
+        background-color: #F6F8F7;
+
+        margin: 0 8px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {
+            margin: 0 7px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            margin: 0 5px;
+        }
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+    }
+
+    .active {
+        background-color: #2947A9;
+    }
+}
+
+.projects-cards--nav--mobile {
+    display: none;
+    margin-top: 15px;
+
+    width: auto;
+    height: 64px;
+
+    background-color: #292E3D;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        display: flex;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: flex;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: flex;
+        // max-width: 384px;
+        margin: 15px auto 0;
+    }
+
+    .t {
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
+
+.select {
+    display: none;
+    border: 1px solid #F9995D;
+    cursor: pointer;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        display: block;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: block;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        .col-1 {
+            flex-grow: 1;
+        }
+
+        .col-2 {
+            flex-basis: 50px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .i {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: #F9995D;
+            }
+        }
+    }
+
+    .options {
+        position: relative;
+    }
+}
+
+.select-col-1 {
+    height: 50px;
+
+    padding-left: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .title {
+        flex-basis: 100px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {
+            display: none;
+        }
+
+        .t {
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+
+            color: #F9995D;
+        }
+    }
+
+    .content {
+        flex-grow: 1;
+
+        .t {
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+
+            color: #F9995D;
+        }
+    }
+}
+
+.options-list {
+    display: none;
+    opacity: 0;
+
+    margin: 2px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+
+    .option {
+        margin: 15px 0;
+        padding: 0 0 0 25px;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #667299;
+    }
+}
+
+.d {
+    display: block;
+}
+
+.a {
+    opacity: 1;
+}
