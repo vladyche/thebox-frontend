@@ -65,19 +65,26 @@
 
             @include media-breakpoint-only(xxl) {}
 
-            @include media-breakpoint-only(xl) {}
+            @include media-breakpoint-only(xl) {
+                padding-bottom: 50px;
+            }
 
-            @include media-breakpoint-only(lg) {}
+            @include media-breakpoint-only(lg) {
+                padding-bottom: 50px;
+            }
 
             @include media-breakpoint-only(md) {
+                padding-bottom: 25px;
                 flex-direction: column;
             }
 
             @include media-breakpoint-only(sm) {
+                padding-bottom: 25px;
                 flex-direction: column;
             }
 
             @include media-breakpoint-only(xs) {
+                padding-bottom: 25px;
                 flex-direction: column;
             }
 
@@ -648,12 +655,4 @@
 
         color: #667299;
     }
-}
-
-.d {
-    display: block;
-}
-
-.a {
-    opacity: 1;
 }

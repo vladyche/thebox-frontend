@@ -24,3 +24,28 @@
 @import "./landing/experience/experience";
 @import "./landing/callback/callback";
 @import "./landing/projects/projects";
+@import "./landing/contact-form/contact-form";
+
+//preloaders
+@import "./preloaders/spinners";
+@import "./preloaders/preloader";
+
+// .d {
+//     display: block;
+// }
+
+// .a {
+//     opacity: 1;
+// }
+
+.open {
+    transform: translateX(-225px);
+}
+
+.on {
+    display: block;
+}
+
+.scrolloff {
+    overflow: hidden;
+}

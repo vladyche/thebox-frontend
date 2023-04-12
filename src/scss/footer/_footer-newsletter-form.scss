@@ -3,7 +3,26 @@
 
     .preloader {
         display: none;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-color: #000000bb;
+
+        justify-content: center;
+        align-items: center;
     }
+
+    // .d {
+    //     display: flex;
+    // }
+
+    // .a {
+    //     opacity: 1;
+    // }
 }
 
 .footer-subscribe--preview-text {
@@ -108,5 +127,49 @@
     &:focus {
         outline: none;
         border: 1px solid #F9995D;
+    }
+}
+
+// --------------------------------
+.footer-subscribe {
+
+    .success-mode {
+
+        .message {}
+
+        .close {
+            padding-top: 15px;
+        }
+    }
+
+    .error-mode {
+
+        .message {}
+
+        .link {
+            padding-top: 5px;
+
+            .form-preloader--error-link {
+                padding: 0;
+
+                .row-1 {
+
+                    .t {
+                        font-size: 12px;
+                    }
+                }
+
+                .row-1 {
+
+                    .t {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .close {
+            padding-top: 15px;
+        }
     }
 }
