@@ -16,6 +16,9 @@
 // mobile-menu
 @import "./mobile-menu/main";
 
+// callback-modal
+@import "./callback-modal/callback-modal";
+
 //landing
 @import "./landing/slider/slider";
 @import "./landing/reputation/reputation";
@@ -41,6 +44,11 @@
 }
 
 .main-menu-mobile {
+    display: none;
+    opacity: 0;
+}
+
+.callback-modal {
     display: none;
     opacity: 0;
 }
