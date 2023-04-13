@@ -526,6 +526,7 @@
 
 .select {
     display: none;
+
     border: 1px solid #F9995D;
     cursor: pointer;
 
@@ -572,9 +573,11 @@
         }
     }
 
-    .options {
-        position: relative;
-    }
+    .options {}
+}
+
+.select-options {
+    position: relative;
 }
 
 .select-col-1 {
@@ -628,9 +631,6 @@
 }
 
 .options-list {
-    display: none;
-    opacity: 0;
-
     margin: 2px 0 0 0;
     padding: 0;
     list-style: none;

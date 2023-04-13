@@ -1,28 +1,7 @@
 .footer-subscribe {
     position: relative;
 
-    .preloader {
-        display: none;
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-
-        background-color: #000000bb;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    // .d {
-    //     display: flex;
-    // }
-
-    // .a {
-    //     opacity: 1;
-    // }
+    .preloader {}
 }
 
 .footer-subscribe--preview-text {

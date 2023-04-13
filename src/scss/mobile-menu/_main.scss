@@ -1,7 +1,4 @@
 .main-menu-mobile {
-    display: none;
-    opacity: 0;
-
     position: fixed;
     top: 0;
     right: 0;
@@ -108,23 +105,3 @@
         }
     }
 }
-
-// open mobile menu
-//-----------------
-// .d {
-//     display: block;
-// }
-
-// .a {
-//     opacity: 1;
-// }
-
-// .open {
-//     transform: translateX(-225px);
-// }
-
-// .scrolloff {
-//     overflow: hidden;
-// }
-
-// end open mobile menu

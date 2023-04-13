@@ -30,22 +30,33 @@
 @import "./preloaders/spinners";
 @import "./preloaders/preloader";
 
-// .d {
-//     display: block;
-// }
-
-// .a {
-//     opacity: 1;
-// }
-
-.open {
-    transform: translateX(-225px);
+.preloader {
+    display: none;
+    opacity: 0;
 }
 
-.on {
+.options {
+    display: none;
+    opacity: 0;
+}
+
+.main-menu-mobile {
+    display: none;
+    opacity: 0;
+}
+
+.d {
     display: block;
+}
+
+.a {
+    opacity: 1;
 }
 
 .scrolloff {
     overflow: hidden;
+}
+
+.open {
+    transform: translateX(-225px);
 }
