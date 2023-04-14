@@ -259,6 +259,7 @@
 
     .link {
         text-decoration: none;
+        display: flex; // TODO: add link to project-card for avoid this flex
     }
 }
 
@@ -272,8 +273,6 @@
     }
 
     .container {
-        flex-grow: 1;
-
         padding: 12px;
 
         font-family: 'worksans';
@@ -368,7 +367,12 @@
         display: none;
     }
 
-    .l {}
+    .l {
+
+        .link {
+            text-decoration: none;
+        }
+    }
 
     .center {
         flex-grow: 1;
@@ -378,7 +382,12 @@
         align-items: center;
     }
 
-    .r {}
+    .r {
+
+        .link {
+            text-decoration: none;
+        }
+    }
 }
 
 .projects-cards--navs-btn {
@@ -654,5 +663,10 @@
         font-size: 18px;
 
         color: #667299;
+
+        .link {
+            color: #667299;
+            text-decoration: none;
+        }
     }
 }

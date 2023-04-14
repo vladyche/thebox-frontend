@@ -1,0 +1,215 @@
+.page {
+
+    >.container {
+        padding: 0 50px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            padding: 0 25px;
+        }
+
+        >.title {
+            padding: 25px 0 35px;
+
+            font-family: "worksans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+
+            color: #292E3D;
+        }
+    }
+}
+
+.page-content {}
+
+.page-columns {
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-only(sm) {
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+    }
+
+    .aside {
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {
+            width: 300px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 250px;
+        }
+
+        @include media-breakpoint-only(md) {
+            padding-bottom: 25px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            padding-bottom: 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            padding-bottom: 25px;
+        }
+
+        .nav {
+            width: 400px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {
+                width: 300px;
+            }
+
+            @include media-breakpoint-only(lg) {
+                width: 250px;
+            }
+
+            @include media-breakpoint-only(md) {
+                display: none;
+            }
+
+            @include media-breakpoint-only(sm) {
+                display: none;
+            }
+
+            @include media-breakpoint-only(xs) {
+                display: none;
+            }
+        }
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+}
+
+.article {
+
+    h1 {
+        margin: 0;
+        padding: 0 0 35px;
+
+        font-family: "worksans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+
+        text-align: center;
+        color: #292E3D;
+    }
+}
+
+.page-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .item {
+        padding: 10px 0 10px 0;
+
+        &:first-child {
+            padding: 0 0 10px 0;
+        }
+
+        &:last-child {
+            padding: 10px 0 0 0;
+        }
+
+        &:hover {
+
+            .page-menu-item {
+
+                .i {}
+
+                .t {
+                    color: #2947A9;
+                }
+            }
+        }
+
+        .link {
+            text-decoration: none;
+        }
+    }
+
+    .active {
+
+        .page-menu-item {
+
+            .i {
+                background-color: #2947A9;
+            }
+
+            .t {
+                color: #2947A9;
+            }
+        }
+    }
+}
+
+.page-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .i {
+        width: 4px;
+        height: 28px;
+    }
+
+    .t {
+        padding-left: 16px;
+        font-family: "worksans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #C2C7D6;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+    }
+}
