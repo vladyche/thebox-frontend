@@ -31,6 +31,26 @@
         >.col-1 {
             flex-grow: 1;
             position: relative;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {
+                padding-top: 25px;
+            }
+
+            @include media-breakpoint-only(md) {
+                padding-top: 25px;
+            }
+
+            @include media-breakpoint-only(sm) {
+                padding-top: 25px;
+            }
+
+            @include media-breakpoint-only(xs) {
+                padding-top: 25px;
+            }
         }
 
         >.col-2 {
@@ -192,7 +212,7 @@
         margin: 10px 0;
     }
 
-    .container {
+    >.container {
         position: absolute;
         top: 0;
         right: 0;
@@ -243,7 +263,7 @@
 
 .landing-experience--card-amount {
 
-    .t {
+    >.t {
         font-family: 'worksans';
         font-style: normal;
         font-weight: 600;
@@ -273,14 +293,14 @@
         margin-left: 5px;
     }
 
-    .i {
+    >.i {
         // width: 7px;
         flex-basis: 7px;
         height: 28px;
         background-color: #F9995D;
     }
 
-    .t {
+    >.t {
         padding-left: 13px;
 
         font-family: 'worksans';
