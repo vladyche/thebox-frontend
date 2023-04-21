@@ -229,44 +229,51 @@
             }
         }
 
-        >.btn {
+        >.link {
+            display: inline-block;
             margin: 70px 0 0 0;
             padding: 0;
-
-            width: 219px;
-            height: 53px;
-
-            background: #FFFFFF;
-            border: 2px solid #2947A9;
-            border-radius: 6px;
-
-            font-family: 'worksans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
-            text-align: center;
-            color: #2947A9;
-
-            cursor: pointer;
-
-            @include media-breakpoint-only(xxl) {}
-
-            @include media-breakpoint-only(xl) {}
-
-            @include media-breakpoint-only(lg) {}
-
-            @include media-breakpoint-only(md) {
-                margin: 50px 0 0 0;
-            }
-
-            @include media-breakpoint-only(sm) {
-                margin: 50px 0 0 0;
-            }
-
-            @include media-breakpoint-only(xs) {
-                margin: 50px 0 0 0;
-            }
+            text-decoration: none;
         }
+    }
+}
+
+.about-us-btn {
+    width: 219px;
+    height: 53px;
+
+    background: #FFFFFF;
+    border: 2px solid #2947A9;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        margin: 50px 0 0 0;
+    }
+
+    @include media-breakpoint-only(sm) {
+        margin: 50px 0 0 0;
+    }
+
+    @include media-breakpoint-only(xs) {
+        margin: 50px 0 0 0;
+    }
+
+    .t {
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #2947A9;
     }
 }

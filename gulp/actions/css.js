@@ -35,10 +35,12 @@ export const css = () => {
         .pipe(groupMediaQueries())
 
         .pipe(rename("style.css"))
+        .pipe(gulp.dest("./build/css/"))
+
+        // ;
+        .pipe(cleanCss())
+
+        .pipe(rename({ extname: ".min.css" }))
         .pipe(gulp.dest("./build/css/"));
-
-    // .pipe(cleanCss())
-
-    // .pipe(rename({ extname: ".min.css" }))
-    // .pipe(gulp.dest("./build/css/"));
+    // 
 }
