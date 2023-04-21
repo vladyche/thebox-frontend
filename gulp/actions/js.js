@@ -15,23 +15,23 @@ export const js = () => {
         ))
 
         .pipe(webpack({
-            mode: 'development', //production|development
+            mode: 'production', //production|development
 
-            // devtool: 'source-map',
+            devtool: 'source-map',
 
             output: {
                 filename: 'script.js',
             },
 
-            // module: {
-            //     rules: [
-            //         {
-            //             test: /\.js$/,
-            //             exclude: /node_modules/,
-            //             loader: "babel-loader",
-            //         },
-            //     ]
-            // }
+            module: {
+                rules: [
+                    {
+                        test: /\.js$/,
+                        exclude: /node_modules/,
+                        loader: "babel-loader",
+                    },
+                ]
+            }
 
         }))
 

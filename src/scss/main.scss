@@ -1,4 +1,73 @@
-body {
+@import "./variables/variables";
+@import "./functions/breakpoints";
 
-    background: #000;
+@import "./fonts/fonts";
+@import "./layout/layout";
+
+// header
+@import "./header/header";
+@import "./header/menu";
+@import "./header/mobile-menu";
+
+// footer
+@import "./footer/footer";
+@import "./footer/footer-newsletter-form";
+
+// mobile-menu
+@import "./mobile-menu/main";
+
+// callback-modal
+@import "./callback-modal/callback-modal";
+
+//landing
+@import "./landing/slider/slider";
+@import "./landing/reputation/reputation";
+@import "./landing/about-us/about-us";
+@import "./landing/services/services";
+@import "./landing/experience/experience";
+@import "./landing/callback/callback";
+@import "./landing/projects/projects";
+@import "./landing/contact-form/contact-form";
+
+//page
+@import "./page/page";
+
+//preloaders
+@import "./preloaders/spinners";
+@import "./preloaders/preloader";
+
+.preloader {
+    display: none;
+    opacity: 0;
+}
+
+.options {
+    display: none;
+    opacity: 0;
+}
+
+.main-menu-mobile {
+    display: none;
+    opacity: 0;
+}
+
+.callback-modal {
+    display: none;
+    opacity: 0;
+}
+
+.d {
+    display: block;
+}
+
+.a {
+    opacity: 1;
+}
+
+.scrolloff {
+    overflow: hidden;
+}
+
+.open {
+    transform: translateX(-225px);
 }

@@ -1,1 +1,2 @@
-console.log('thebox js');
+import "./functions.js";
+import "./mobile-menu.js";

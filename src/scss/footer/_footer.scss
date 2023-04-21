@@ -1,0 +1,269 @@
+.footer-blocks {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    >.block {
+        margin: 30px 0 30px 0;
+
+        &:first-child {
+            margin: 0 0 30px 0;
+        }
+
+        &:last-child {
+            margin: 30px 0 0 0;
+        }
+    }
+}
+
+.footer-col-1 {
+    padding-top: 50px;
+}
+
+.footer-col-2 {
+    padding-top: 50px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 30px;
+    }
+}
+
+.footer-contacts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    >.contact {
+        margin: 3px 0 3px 0;
+
+        &:first-child {
+            margin: 0 0 3px 0;
+        }
+
+        &:last-child {
+            margin: 3px 0 0 0;
+        }
+    }
+}
+
+.footer-social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+
+    >.item {
+        margin: 0 10px 0 10px;
+
+        &:first-child {
+            margin: 0 10px 0 0;
+        }
+
+        &:last-child {
+            margin: 0 0 0 10px;
+        }
+
+        >.link {
+            text-decoration: none;
+            display: block;
+
+            .i {
+                display: block;
+            }
+        }
+    }
+}
+
+.footer-block {
+
+    >.title {
+
+        .t {
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            font-variant: all-small-caps;
+            color: #2947A9;
+
+            @include media-breakpoint-only(xl) {
+                font-size: 18px;
+            }
+
+            @include media-breakpoint-only(lg) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    >.block {
+        padding-top: 15px;
+    }
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >.title {
+        flex-basis: 100px;
+    }
+
+    >.text {}
+}
+
+.footer-contact--title {
+    font-family: 'worksans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    font-variant: all-small-caps;
+    color: #292E3D;
+
+    @include media-breakpoint-only(xl) {
+        font-size: 16px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        font-size: 14px;
+    }
+}
+
+.footer-contact--text {
+    font-family: 'worksans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #292E3D;
+
+    @include media-breakpoint-only(xl) {
+        font-size: 16px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        font-size: 14px;
+    }
+}
+
+// copyright block
+.copyright {
+
+    >.container {
+        min-height: 70px;
+        padding: 0 50px;
+
+        display: flex;
+        flex-direction: row;
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            min-height: auto;
+            padding: 0 25px;
+        }
+
+        >.col-1 {
+            flex-basis: 55%;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @include media-breakpoint-down(lg) {
+                flex-basis: 100%;
+                min-height: 50px;
+            }
+        }
+
+        >.col-2 {
+            flex-basis: 45%;
+
+            @include media-breakpoint-down(lg) {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+.company-copyright {
+
+    .t {
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+
+        @include media-breakpoint-only(xl) {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 12px;
+        }
+    }
+}
+
+.copyright-author {
+    padding: 15px 0;
+
+    >.container {}
+}
+
+.copyright-author--title {
+    font-family: 'worksans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.copyright-author--contacts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    >.item {
+        margin: 3px 0 3px 0;
+
+        &:first-child {
+            margin: 0 0 3px 0;
+        }
+
+        &:first-child {
+            margin: 3px 0 0 0;
+        }
+    }
+}
+
+.copyright-author--contact {
+    font-family: 'worksans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+
+    >.title {
+        flex-basis: 45px;
+        color: #FFFFFF;
+    }
+
+    >.link {
+
+        >a {
+            color: #bebebe;
+
+            &:hover {
+                color: #F9995D;
+            }
+        }
+    }
+}

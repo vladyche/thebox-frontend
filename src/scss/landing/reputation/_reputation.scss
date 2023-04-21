@@ -1,0 +1,113 @@
+.reputation {
+
+    >.container {
+        padding: 0 25px;
+
+        >h2 {
+            margin: 0;
+            padding: 60px 0 50px;
+
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+
+            line-height: 42px;
+            text-align: center;
+            color: #292E3D;
+        }
+
+        >.cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 66px;
+
+            padding-bottom: 84px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {
+                gap: 25px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            @include media-breakpoint-only(md) {}
+
+            @include media-breakpoint-only(sm) {}
+
+            @include media-breakpoint-only(xs) {}
+        }
+    }
+}
+
+.langing-reputation-card {
+    width: 292px;
+    min-height: 197px;
+
+    background: #FFFFFF;
+    border: 1.4px solid #E0E3EB;
+    border-radius: 4px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {
+        width: 270px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: auto;
+    }
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {}
+
+    >.container {
+        padding: 21px;
+
+        .icon {
+            display: block;
+        }
+
+        .content {}
+    }
+}
+
+.langing-reputation-card--content {
+
+    >h3 {
+        margin: 0;
+        padding: 19px 0 18px;
+
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+
+        color: #3D445C;
+    }
+
+    >.text {
+
+        p {
+            margin: 0;
+            padding: 0;
+
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+
+            color: #858EAD;
+        }
+    }
+}

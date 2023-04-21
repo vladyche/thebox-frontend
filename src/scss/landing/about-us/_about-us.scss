@@ -1,0 +1,279 @@
+.about-us {
+
+    >.container {
+        padding: 0 50px 200px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {
+            padding: 0 50px 100px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            padding: 0 50px 100px;
+        }
+
+        @include media-breakpoint-only(md) {
+            padding: 0 50px 50px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            padding: 0 25px 50px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            padding: 0 25px 50px;
+        }
+    }
+}
+
+.about-us-figure {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    >img {
+        display: block;
+        width: 900px;
+        height: auto;
+
+        box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+        border-radius: 2px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {
+            width: auto;
+            max-width: 100%;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: auto;
+            max-width: 100%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+            max-width: 100%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    >figcaption {
+        margin: 0;
+        padding: 0;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(lg) {
+            position: static;
+        }
+
+        @include media-breakpoint-only(md) {
+            position: static;
+        }
+
+        @include media-breakpoint-only(sm) {
+            position: static;
+        }
+
+        @include media-breakpoint-only(xs) {
+            position: static;
+        }
+    }
+}
+
+.landing-about-us--card {
+    width: 488px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {
+        width: 430px;
+    }
+
+    @include media-breakpoint-only(lg) {
+        width: auto;
+    }
+
+    @include media-breakpoint-only(md) {
+        width: auto;
+    }
+
+    @include media-breakpoint-only(sm) {
+        width: auto;
+    }
+
+    @include media-breakpoint-only(xs) {
+        width: auto;
+    }
+
+    .container {
+        padding: 50px 40px 60px;
+        background-color: #2947A9;
+        border-radius: 2px;
+
+        box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {
+            border-radius: 0;
+        }
+
+        @include media-breakpoint-only(md) {
+            border-radius: 0;
+        }
+
+        @include media-breakpoint-only(sm) {
+            padding: 50px 20px 60px;
+            border-radius: 0;
+        }
+
+        @include media-breakpoint-only(xs) {
+            padding: 50px 20px 60px;
+            border-radius: 0;
+        }
+
+        >h3 {
+            margin: 0;
+            padding: 0 0 35px 0;
+
+            font-family: 'worksans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+
+            color: #FFFFFF;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {}
+
+            @include media-breakpoint-only(sm) {
+                font-size: 30px;
+            }
+
+            @include media-breakpoint-only(xs) {
+                font-size: 25px;
+            }
+        }
+
+        >.text {
+
+            p {
+                padding: 0;
+                margin: 15px 0 15px 0;
+
+                &:first-child {
+                    margin: 0 0 15px 0;
+                }
+
+                &:last-child {
+                    margin: 15px 0 0 0;
+                }
+
+                font-family: 'worksans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+
+                color: #FFFFFF;
+
+                @include media-breakpoint-only(xxl) {}
+
+                @include media-breakpoint-only(xl) {
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-only(lg) {
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-only(md) {
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-only(sm) {
+                    font-size: 18px;
+                }
+
+                @include media-breakpoint-only(xs) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        >.link {
+            display: inline-block;
+            margin: 70px 0 0 0;
+            padding: 0;
+            text-decoration: none;
+        }
+    }
+}
+
+.about-us-btn {
+    width: 219px;
+    height: 53px;
+
+    background: #FFFFFF;
+    border: 2px solid #2947A9;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        margin: 50px 0 0 0;
+    }
+
+    @include media-breakpoint-only(sm) {
+        margin: 50px 0 0 0;
+    }
+
+    @include media-breakpoint-only(xs) {
+        margin: 50px 0 0 0;
+    }
+
+    .t {
+        font-family: 'worksans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #2947A9;
+    }
+}

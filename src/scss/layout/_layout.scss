@@ -1,0 +1,102 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #373737;
+    overflow-y: scroll;
+}
+
+.website {
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 100vh;
+
+    background-color: #e5e5e5;
+
+    margin: 0 auto;
+
+    >.container {
+        margin: 0 auto;
+        min-height: 100vh;
+
+        display: grid;
+
+        // (header:fixed) 
+        // 1fr div:main-content 
+        // auto div:footer 
+        // auto div:copyright
+        grid-template-rows: 1fr auto auto;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+        }
+    }
+}
+
+.main {
+    padding-top: 80px;
+    background-color: #ffffff;
+}
+
+.footer {
+
+    >.container {
+        display: flex;
+        flex-direction: row;
+
+        background-color: #FFFFFF;
+
+        min-height: 325px;
+        padding: 0 50px;
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            padding: 0 25px;
+        }
+
+        >.col-1 {
+            flex-basis: 55%;
+
+            @include media-breakpoint-down(lg) {
+                flex-basis: 100%;
+            }
+        }
+
+        >.col-2 {
+            flex-basis: 45%;
+
+            @include media-breakpoint-down(lg) {
+                flex-basis: 100%;
+                padding-bottom: 25px;
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: #2947A9;
+}
